@@ -433,6 +433,13 @@ body {
     transform: translateX(5px);
 }
 
+.project-subtitle {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
 /* Skills Section */
 .skills {
     padding: 5rem 0;
