@@ -145,14 +145,14 @@ document.addEventListener('keydown', (e) => {
 const heroSubtitle = document.querySelector('.hero-subtitle');
 const hour = new Date().getHours();
 
-let greeting = 'Full Stack Developer | Creative Problem Solver';
+let greeting = 'Software Engineer | Full Stack Developer';
 
 if (hour < 12) {
-    greeting = '🌅 Good Morning! Full Stack Developer | Creative Problem Solver';
+    greeting = '🌅 Good Morning! | Software Engineer | Full Stack Developer';
 } else if (hour < 18) {
-    greeting = '☀️ Good Afternoon! Full Stack Developer | Creative Problem Solver';
+    greeting = '☀️ Good Afternoon! | Software Engineer | Full Stack Developer';
 } else {
-    greeting = '🌙 Good Evening! Full Stack Developer | Creative Problem Solver';
+    greeting = '🌙 Good Evening! | Software Engineer | Full Stack Developer';
 }
 
 if (heroSubtitle) {
