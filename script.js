@@ -26,21 +26,20 @@ if (hamburger) {
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+        // Get form values for client-side validation
+        const name = this.querySelector('input[name="name"]').value;
+        const email = this.querySelector('input[name="email"]').value;
+        const message = this.querySelector('textarea[name="message"]').value;
         
-        // Get form values
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
-        
-        // Simple validation
+        // Simple validation before submission
         if (name && email && message) {
-            // Show success message
-            alert(`Thank you ${name}! Your message has been sent. We'll get back to you soon at ${email}`);
-            
-            // Reset form
-            this.reset();
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
         } else {
+            e.preventDefault();
             alert('Please fill in all fields');
         }
     });
