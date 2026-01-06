@@ -1,4 +1,4 @@
-# Julio Ushkumar Das - Portfolio
+# Julioush kumar Das - Portfolio
 
 A dynamic, vibrant, and modern portfolio website showcasing projects, skills, and experience.
 
@@ -60,4 +60,4 @@ Open source and free to use.
 
 ---
 
-Created with ❤️ by Julio Ushkumar Das
+Created with ❤️ by Julioush kumar Das
